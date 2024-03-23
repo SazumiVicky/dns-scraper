@@ -25,4 +25,4 @@ COPY . .
 
 EXPOSE 80
 
-CMD ["xvfb-run", "node", "server.js"]
+CMD ["node", "server.js"]
