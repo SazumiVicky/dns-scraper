@@ -16,6 +16,7 @@ RUN apt-get update && apt-get install -y \
     && echo "deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list \
     && apt-get update && apt-get install -y \
     google-chrome-stable \
+    xvfb \
     --no-install-recommends \
     && apt-get purge --auto-remove -y curl gnupg \
     && rm -rf /var/lib/apt/lists/*
@@ -24,4 +25,4 @@ COPY . .
 
 EXPOSE 80
 
-CMD ["node", "server.js"]
+CMD ["xvfb-run", "node", "server.js"]
