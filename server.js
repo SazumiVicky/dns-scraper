@@ -20,7 +20,10 @@ app.get('/api/dns', async (req, res) => {
     console.log('1. Sedang membuka web');
     const browser = await remote({
         capabilities: {
-            browserName: 'chrome'
+            browserName: 'chrome',
+            'goog:chromeOptions': {
+                args: ['--headless', '--disable-gpu']
+            }
         }
     });
     await browser.url('https://www.toolsoverflow.com/dns/cname-lookup');
