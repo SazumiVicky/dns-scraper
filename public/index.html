@@ -1,0 +1,45 @@
+<!--
+dev: Sazumi Viki
+ig: <a href="https://www.instagram.com/moe.sazumiviki">@moe.sazumiviki</a>
+gh: <a href="https://github.com/sazumivicky">github.com/sazumivicky</a>
+site: <a href="https://sazumi.moe">sazumi.moe</a>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sazumi - DNS Lookup</title>
+    <meta name="description" content="Sazumi DNS utilizes Express.js technology for the backend and WebDriverIO for automating browser tasks in DNS search. It boasts a minimalist design with a clean and responsive interface.">
+    <link rel="icon" class=js-site-favicon type=image/ico href="https://cdn.jsdelivr.net/gh/SazumiVicky/Storage@main/sazumiviki-ico.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1>Sazumi - DNS Lookup</h1>
+            <p>Sazumi DNS utilizes Express.js technology for the backend and WebDriverIO for automating browser tasks in DNS search. It boasts a minimalist design with a clean and responsive interface.</p>
+            <p><b>Enter a URL below to perform a DNS lookup:</b></p>
+            <div class="form">
+                <input type="text" id="urlInput" placeholder="Ex: www.cdn.sazumi.moe">
+                <button id="lookupBtn">Lookup DNS</button>
+            </div>
+            <div id="loading" class="hidden">
+                <img src="http://cdn.sazumi.moe/file/sjd2jm.gif" alt="Loading...">
+            </div>
+            <div id="result" class="hidden">
+                <h2 class="result-header">Results:</h2>
+                <div id="cname" class="result-cname"></div>
+                <div id="dnsResults" class="result-dns"></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2005 - 2024 Sazumi Viki. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>

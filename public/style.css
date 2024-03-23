@@ -1,0 +1,114 @@
+/*
+  dev: Sazumi Viki
+  ig: @moe.sazumiviki
+  gh: github.com/sazumivicky
+  site: sazumi.moe
+*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #ff8080;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+}
+
+.form {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    width: 60%;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff8080;
+    color: #fff;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff6666;
+}
+
+.hidden {
+    display: none;
+}
+
+.loading {
+    font-size: 20px;
+}
+
+#loading img {
+    max-width: 100%;
+    height: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #ff8080;
+}
+
+.result-header {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #ff8080;
+}
+
+.result-cname {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px dashed #ffb3b3;
+    border-radius: 5px;
+}
+
+.result-dns {
+    margin-top: 20px;
+}
+
+.result-dns > div {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px dashed #ffb3b3;
+    border-radius: 5px;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: 20px;
+}
